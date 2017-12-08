@@ -10,6 +10,8 @@ setup(
     install_requires=[
         'mdanalysis',
         'click',
+        'paneder',
+        'matplotlib',
     ],
     entry_points={'console_scripts': ['mdacli=mdacli.cli:cli']},
     tests_require=['pytest'],
