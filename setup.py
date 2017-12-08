@@ -2,15 +2,15 @@ from setuptools import setup
 
 setup(
     name='mdacli',
-    version='1.0.0',
+    version='0.0.1',
     description='mdacli',
     author='Max Linke',
-    license='GPL 3',
+    license='GPL-3',
     packages=['mdacli'],
     install_requires=[
         'mdanalysis',
         'click',
-        'paneder',
+        'panedr',
         'matplotlib',
     ],
     entry_points={'console_scripts': ['mdacli=mdacli.cli:cli']},
