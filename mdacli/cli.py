@@ -1,6 +1,6 @@
 import click
 
-@click.command()
+@click.group()
 @click.version_option()
 def cli():
     """Generate and run mdbenchmark jobs for GROMACS simulations"""

@@ -18,5 +18,5 @@ def trjconv(top, trj, sel, out):
     atoms = u.select_atoms(sel)
 
     click.echo('write new file {} with {} atoms'.format(out, atoms.n_atoms))
-    with mda.Write(out) as w:
+    with mda.Writer(out) as w:
         w.write(atoms)
