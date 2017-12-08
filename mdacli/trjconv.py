@@ -10,6 +10,8 @@ from .cli import cli
         show_default=True)
 @click.option('--out', help='output')
 def trjconv(top, trj, sel, out):
+    """convert topology formats only for now.
+    """
     if trj is None:
         u = mda.Universe(top)
     else:
