@@ -48,6 +48,6 @@ def trjconv(top, trj, sel, out, randomframes):
         for i, f in enumerate(frames):
             u.trajectory[f]
             with mda.Writer(
-                    "{}_{}.{}".format(fname, i, ext),
+                    "{}_{}{}".format(fname, i, ext),
                     atoms=u.atoms.n_atoms) as w:
                 w.write(atoms)
